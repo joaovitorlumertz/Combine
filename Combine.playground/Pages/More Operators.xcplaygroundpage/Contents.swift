@@ -46,13 +46,13 @@ example(of: "last(where:) #2") {
     subject.send(300)
     subject.send(400)
     subject.send(500)
-    // subject.send(completion: .finished)
+    subject.send(completion: .finished)
 }
 
 // Combining:
 example(of: "prepend(Output...)") {
     let publisher = [3, 4].publisher
-
+    
     publisher
         .prepend(1, 2)
         .sink(receiveValue: { print($0) })
@@ -70,13 +70,13 @@ example(of: "merge(with:)") {
             receiveValue: { print($0) }
         )
         .store(in: &subscriptions)
-
+    
     publisher1.send(1)
     publisher1.send(2)
     publisher2.send(3)
     publisher1.send(4)
     publisher2.send(5)
-
+    
     publisher1.send(completion: .finished)
     publisher2.send(completion: .finished)
 }
@@ -107,13 +107,10 @@ example(of: "chaining") {
     let formatter = NumberFormatter()
     formatter.numberStyle = .spellOut
     
-    let subscription = publisher1
+    publisher1
         .merge(with: publisher2)
         .removeDuplicates()
         .map { formatter.string(for: NSNumber(integerLiteral: $0)) ?? "" }
         .sink { print($0) }
         .store(in: &subscriptions)
 }
-
-
-//: [Next](@next)

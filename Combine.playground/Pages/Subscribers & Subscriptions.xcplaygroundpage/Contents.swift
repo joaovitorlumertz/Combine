@@ -1,7 +1,10 @@
 import Foundation
 //: [Previous](@previous)
 
-example(of: "sink") {
+/*: Um Subscriber se inscreve em um Publisher para receber seus valores. */
+/*: Subscriptions representam a conexão entre publishers e subscribers. */
+
+example(of: "sink(receiveCompletion:receiveValue:)") {
     let publisher = [0, 1, 2, 3, 4].publisher
 
     let subscription = publisher
@@ -16,7 +19,7 @@ example(of: "sink") {
 
 }
 
-example(of: "assign") {
+example(of: "assign(to:on:)") {
     class MyClass {
         var anInt: Int = 0 {
             didSet {

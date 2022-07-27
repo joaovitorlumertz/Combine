@@ -1,9 +1,8 @@
 import Foundation
 import Combine
 
+var subscriptions = Set<AnyCancellable>()
 //: [Previous](@previous)
-
-
 
 /*: Em Combine, chamamos os métodos que executam uma operação em valores provenientes de um Publisher de “operadores”.
 Cada operador Combine retorna um Publisher.
@@ -16,6 +15,7 @@ example(of: "map") {
     publisher
         .map { $0 * 2 }
         .sink(receiveValue: { print($0) })
+        .store(in: &subscriptions)
 }
 
 example(of: "encadeando operadores") {
@@ -30,4 +30,5 @@ example(of: "encadeando operadores") {
         .removeDuplicates()
         .map { formatter.string(for: NSNumber(integerLiteral: $0)) ?? "" }
         .sink { print($0) }
+        .store(in: &subscriptions)
 }

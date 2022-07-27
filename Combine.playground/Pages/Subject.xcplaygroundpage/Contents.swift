@@ -2,6 +2,7 @@ import Foundation
 import Combine
 
 //: [Previous](@previous)
+/*: `PassthroughSubject<Output, Failure>`: permite que você publique novos valores sob demanda*/
 
 example(of: "Subject #PassthroughSubject") {
     let subject = PassthroughSubject<String, Never>()
@@ -18,6 +19,7 @@ example(of: "Subject #PassthroughSubject") {
     subject.send("!")
 }
 
+/*: `CurrentValueSubject<Output, Failure>`: baseado no PassthroughSubject, porém permite saber qual o seu valor atual: */
 
 example(of: "Subject #CurrentValueSubject") {
     let subject = CurrentValueSubject<Int, Never>(0)
