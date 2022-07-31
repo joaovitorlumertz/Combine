@@ -227,3 +227,15 @@ let subscription = publisher1
 ```
 
 <img src="./images/combine-operators.png" alt="Combine operators" />
+
+## Links úteis
+### Livros
+- [Combine: Asynchronous Programming with Swift](https://www.raywenderlich.com/books/combine-asynchronous-programming-with-swift/v3.0)
+### Artigos
+- [Problem Solving with Combine Swift](https://medium.com/@arlindaliu.dev/problem-solving-with-combine-swift-4751885fda77)
+- [Getting started with the Combine framework in Swift](https://www.avanderlee.com/swift/combine/)
+### Vídeos
+- [try! Swift NYC 2019 - Getting Started with Combine](https://www.youtube.com/watch?v=fejmsuxoIvA&t=418s)
+- [Getting started with Combine + UIKit in Swift](https://www.youtube.com/watch?v=IAKco9XaPgg&t=57s)
+- [iOS 13 Swift Tutorial: Combine Framework - A Practical Introduction with UIKit](https://www.youtube.com/watch?v=RysM_XPNMTw)
+- [Migrating to Combine](https://www.youtube.com/watch?v=rqYiA5N4X5w&t=1s)
