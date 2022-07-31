@@ -6,7 +6,8 @@ var subscriptions = Set<AnyCancellable>()
 
 /*: Em Combine, chamamos os métodos que executam uma operação em valores provenientes de um Publisher de “operadores”.
 Cada operador Combine retorna um Publisher.
-*/
+ - Operators montam uma cadeia de republishers que processa elementos produzidos por publishers upstream.
+ */
 
 // Transforming:
 example(of: "map") {
