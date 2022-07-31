@@ -230,12 +230,12 @@ let subscription = publisher1
 
 ## Links úteis
 ### Livros
-- [Combine: Asynchronous Programming with Swift](https://www.raywenderlich.com/books/combine-asynchronous-programming-with-swift/v3.0)
+- <a href="https://www.raywenderlich.com/books/combine-asynchronous-programming-with-swift/v3.0" target="_blank">Combine: Asynchronous Programming with Swift</a>
 ### Artigos
-- [Problem Solving with Combine Swift](https://medium.com/@arlindaliu.dev/problem-solving-with-combine-swift-4751885fda77)
-- [Getting started with the Combine framework in Swift](https://www.avanderlee.com/swift/combine/)
+- <a href="https://www.avanderlee.com/swift/combine/" target="_blank">Getting started with the Combine framework in Swift</a>
+- <a href="https://medium.com/@arlindaliu.dev/problem-solving-with-combine-swift-4751885fda77" target="_blank">Problem Solving with Combine Swift</a>
 ### Vídeos
-- [try! Swift NYC 2019 - Getting Started with Combine](https://www.youtube.com/watch?v=fejmsuxoIvA&t=418s)
-- [Getting started with Combine + UIKit in Swift](https://www.youtube.com/watch?v=IAKco9XaPgg&t=57s)
-- [iOS 13 Swift Tutorial: Combine Framework - A Practical Introduction with UIKit](https://www.youtube.com/watch?v=RysM_XPNMTw)
-- [Migrating to Combine](https://www.youtube.com/watch?v=rqYiA5N4X5w&t=1s)
+- <a href="https://youtu.be/fejmsuxoIvA" target="_blank">try! Swift NYC 2019 - Getting Started with Combine</a>
+- <a href="https://youtu.be/IAKco9XaPgg" target="_blank">Getting started with Combine + UIKit in Swift</a>
+- <a href="https://www.youtube.com/watch?v=RysM_XPNMTw" target="_blank">iOS 13 Swift Tutorial: Combine Framework - A Practical Introduction with UIKit</a>
+- <a href="https://youtu.be/rqYiA5N4X5w" target="_blank">Migrating to Combine</a>
