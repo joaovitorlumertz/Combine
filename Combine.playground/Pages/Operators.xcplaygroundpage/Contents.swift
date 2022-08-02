@@ -13,10 +13,9 @@ Cada operador Combine retorna um Publisher.
 example(of: "map") {
     let publisher = (1...3).publisher
     
-    publisher
+    let subscription = publisher
         .map { $0 * 2 }
         .sink(receiveValue: { print($0) })
-        .store(in: &subscriptions)
 }
 
 example(of: "encadeando operadores") {
@@ -26,10 +25,9 @@ example(of: "encadeando operadores") {
     let formatter = NumberFormatter()
     formatter.numberStyle = .spellOut
     
-    publisher1
+    let subscription = publisher1
         .merge(with: publisher2)
         .removeDuplicates()
         .map { formatter.string(for: NSNumber(integerLiteral: $0)) ?? "" }
         .sink { print($0) }
-        .store(in: &subscriptions)
 }
