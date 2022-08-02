@@ -18,18 +18,4 @@ example(of: "sink(receiveCompletion:receiveValue:)") {
         )
 
 }
-
-example(of: "assign(to:on:)") {
-    class MyClass {
-        var anInt: Int = 0 {
-            didSet {
-                print("anInt was set to: \(anInt)", terminator: "; ")
-            }
-        }
-    }
-
-    let myObject = MyClass()
-    let myRange = (0...2)
-    let subscription = myRange.publisher.assign(to: \.anInt, on: myObject)
-}
 //: [Next](@next)
