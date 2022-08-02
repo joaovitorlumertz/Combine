@@ -228,6 +228,9 @@ let subscription = publisher1
 
 <img src="./images/combine-operators.png" alt="Combine operators" />
 
+## Exemplo prático
+[Showcase - Combine e SwiftUI](https://github.com/AnthonyApollo/Simple-Combine-and-SwiftUI-Showcase)
+
 ## Links úteis
 ### Livros
 - <a href="https://www.raywenderlich.com/books/combine-asynchronous-programming-with-swift/v3.0" target="_blank">Combine: Asynchronous Programming with Swift</a>
